@@ -4,7 +4,6 @@ import 'package:mvc_practice/models/movie.dart';
 import 'package:mvc_practice/models/movies_collection.dart';
 
 class MovieApi {
-
   // get  movie details through movie name pass into parameter, from omdb api by baseUrl call through network class client method
   Future<Movie> getMovieInfo(String movieName) async {
     String response =
