@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mvc_practice/views/screens/movie_details.dart';
 import 'views/screens/home.dart';
 
 void main() {

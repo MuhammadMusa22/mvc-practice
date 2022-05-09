@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mvc_practice/controllers/movie_api.dart';
 import 'package:mvc_practice/models/movie.dart';
