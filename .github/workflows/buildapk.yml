@@ -31,6 +31,14 @@ jobs:
           ##path: build/app/outputs/apk/release/app-release.apk
           tag:  v1.0.${{ github.run_number }}
           token: ${{ secrets.GIT_TOKEN}}
+          
+      - name: Upload to slack step
+      - uses: adrey/slack-file-upload-action@master
+        ##- uses: actions/upload-artifact@v3
+        with:
+          token: ${{ secrets.SLACK_TOKEN }}
+          path: build/app/outputs/apk/debug/app-armeabi-v7a-debug.apk
+          channel-id: 'C02EKNP8JQH'
 
       - uses: slackapi/slack-github-action@v1.18.0
         with:
@@ -39,10 +47,4 @@ jobs:
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
 
-      - name: Upload to slack step
-      - uses: adrey/slack-file-upload-action@master
-      ##- uses: actions/upload-artifact@v3
-        with:
-          token: ${{ secrets.SLACK_TOKEN }}
-          path: build/app/outputs/apk/debug/app-armeabi-v7a-debug.apk
-          channel-id: 'C02EKNP8JQH'
+
