@@ -27,6 +27,6 @@ jobs:
       - uses: ncipollo/release-action@v1
         with:
           ##name: release-apk
-          artifacts: "build/app/outputs/apk/release/*"
+          artifacts: "build/app/outputs/apk/debug/*"
           ##path: build/app/outputs/apk/release/app-release.apk
           tag:  v1.0.${{ github.run_number }}
