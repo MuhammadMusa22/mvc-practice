@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Github Action main',
+      title: 'MVC Practice',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
