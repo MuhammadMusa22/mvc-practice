@@ -34,7 +34,7 @@ jobs:
 
       - uses: slackapi/slack-github-action@v1.18.0
         with:
-          channel: 'random'
+          channel-id: 'C02EKNP8JQH'
           slack-message: "Does it Work"
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
